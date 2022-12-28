@@ -1,3 +1,11 @@
 # Signal-Tap-data-extraction
-Python script for extracting data from Signal Tap waveform
+1) In the signaltap, open the resulting sequence diagram. Right-click on any signal in the left part of the sequence diagram to call the context menu.
+In the context menu, select the "Create Signal Tap list file" item and save the resulting file to the folder with the script.
+
+2) Run the script and enter the name of the text file obtained in the first paragraph.
+
+3) A new folder will be created in the script folder. This folder contains files with readings of cyclogram signals.
+One file for each signal. Select the files of the signals you need.
+
+4) Move the files to the simulation files folder. In the testbench, initialize registers from files with the readmemh() command.
 ![Результат симуляции](https://user-images.githubusercontent.com/65023680/209684812-9b9bf392-3df0-40fa-b591-56a8d55fed5b.PNG)
